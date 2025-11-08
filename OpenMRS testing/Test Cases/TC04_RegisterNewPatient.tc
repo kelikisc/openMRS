@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC04_RegisterNewPatient</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>abf8321a-84e4-4bb7-b09a-8d17cd8b5a58</testCaseGuid>
+</TestCaseEntity>

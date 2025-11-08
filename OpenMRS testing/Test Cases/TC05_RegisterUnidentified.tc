@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC05_RegisterUnidentified</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>000bd597-1323-47c0-918a-94d6d342b5bc</testCaseGuid>
+</TestCaseEntity>
