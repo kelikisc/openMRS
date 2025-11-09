@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Button_ConfirmEdit</name>
+   <name>Menu_AppointmentRequests</name>
    <tag></tag>
-   <elementGuidId>cde4f508-f4e7-4751-a33e-4aeeb71e8aa1</elementGuidId>
+   <elementGuidId>823d4214-69a8-493e-9407-119a7f3a1b8f</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//button[@class='cancel']/following-sibling::button)[3]</value>
+         <value>//a[@id='appointmentschedulingui-appointmentRequests-app']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

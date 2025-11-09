@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Button_ConfirmEdit</name>
+   <name>Button_VisitNote</name>
    <tag></tag>
-   <elementGuidId>cde4f508-f4e7-4751-a33e-4aeeb71e8aa1</elementGuidId>
+   <elementGuidId>76f07086-c21e-4168-ba36-78947ab31c82</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//button[@class='cancel']/following-sibling::button)[3]</value>
+         <value>//*[@id=&quot;referenceapplication.realTime.simpleVisitNote&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

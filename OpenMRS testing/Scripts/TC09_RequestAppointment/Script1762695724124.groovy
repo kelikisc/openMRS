@@ -61,21 +61,31 @@ WebUI.verifyElementPresent(findTestObject('Page_UserDetails/Text_FamilyName'), 0
 
 WebUI.verifyElementText(findTestObject('Page_UserDetails/Text_FamilyName'), GlobalVariable.FamilyName)
 
-WebUI.click(findTestObject('Page_UserDetails/Date_Visit'))
+WebUI.click(findTestObject('Page_UserDetails/Button_RequestAppointment'))
 
-WebUI.click(findTestObject('Page_Visits/Button_EditDate'))
+WebUI.click(findTestObject('Page_AppointmentRequest/Input_AppointmentType'))
 
-WebUI.click(findTestObject('Page_Visits/Date_Target'))
+WebUI.setText(findTestObject('Page_AppointmentRequest/Input_AppointmentType'), 'General')
 
-WebUI.click(findTestObject('Page_Visits/Button_ConfirmEdit'))
+WebUI.click(findTestObject('Page_AppointmentRequest/List_Appointment1'))
 
-WebUI.delay(2, FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Page_AppointmentRequest/Button_Save'))
 
-WebUI.click(findTestObject('Page_Visits/Button_Delete'))
+WebUI.delay(3)
 
-WebUI.click(findTestObject('Page_Visits/Button_ConfirmDelete'))
+WebUI.click(findTestObject('Page_Visits/Icon_HomePage'))
 
-//WebUI.click(findTestObject('Page_UserDetails/Button_Confirm'))
+WebUI.waitForElementPresent(findTestObject('Page_Home/Text_LoginInfo'), 0)
+
+WebUI.verifyElementPresent(findTestObject('Page_Home/Text_LoginInfo'), 0)
+
+WebUI.click(findTestObject('Page_Home/Menu_Appointment'))
+
+WebUI.click(findTestObject('Page_AppointmentMenu/Menu_AppointmentRequests'))
+
+String FullName = WebUI.getText(findTestObject('Page_AppointmentMenu/Table_AppointmentRequests'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.verifyMatch(FullName, GlobalVariable.GivenName + " " + GlobalVariable.FamilyName, false)
 
 WebUI.closeBrowser()
 

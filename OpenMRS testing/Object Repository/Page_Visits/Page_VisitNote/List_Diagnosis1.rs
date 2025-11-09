@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Button_ConfirmEdit</name>
+   <name>List_Diagnosis1</name>
    <tag></tag>
-   <elementGuidId>cde4f508-f4e7-4751-a33e-4aeeb71e8aa1</elementGuidId>
+   <elementGuidId>5ba900a0-29a7-45b3-9778-ac70aaa1fec4</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//button[@class='cancel']/following-sibling::button)[3]</value>
+         <value>//a[@class='ui-corner-all']//strong[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

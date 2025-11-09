@@ -21,12 +21,17 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'Patient3'</initValue>
+      <initValue>'Patient9'</initValue>
       <name>GivenName</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
       <initValue>'NewABC'</initValue>
       <name>FamilyName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Clinical and medical note 123 - Visit note'</initValue>
+      <name>ClinicalNote</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

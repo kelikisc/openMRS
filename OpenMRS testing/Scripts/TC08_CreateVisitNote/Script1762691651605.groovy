@@ -63,19 +63,29 @@ WebUI.verifyElementText(findTestObject('Page_UserDetails/Text_FamilyName'), Glob
 
 WebUI.click(findTestObject('Page_UserDetails/Date_Visit'))
 
-WebUI.click(findTestObject('Page_Visits/Button_EditDate'))
+WebUI.click(findTestObject('Page_Visits/Button_VisitNote'))
 
-WebUI.click(findTestObject('Page_Visits/Date_Target'))
+WebUI.click(findTestObject('Page_Visits/Page_VisitNote/Drodpwon_Diagnosis'))
 
-WebUI.click(findTestObject('Page_Visits/Button_ConfirmEdit'))
+WebUI.setText(findTestObject('Page_Visits/Page_VisitNote/Drodpwon_Diagnosis'), 'Head')
+
+WebUI.click(findTestObject('Page_Visits/Page_VisitNote/List_Diagnosis1'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('Page_Visits/Page_VisitNote/Drodpwon_Diagnosis'))
+
+WebUI.setText(findTestObject('Page_Visits/Page_VisitNote/Drodpwon_Diagnosis'), 'Anem')
 
 WebUI.delay(2, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_Visits/Button_Delete'))
+WebUI.click(findTestObject('Page_Visits/Page_VisitNote/List_Diagnosis2'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_Visits/Button_ConfirmDelete'))
+WebUI.click(findTestObject('Page_Visits/Page_VisitNote/Input_ClinicalNote'))
 
-//WebUI.click(findTestObject('Page_UserDetails/Button_Confirm'))
+WebUI.setText(findTestObject('Page_Visits/Page_VisitNote/Input_ClinicalNote'), GlobalVariable.ClinicalNote)
+
+WebUI.click(findTestObject('Page_Visits/Page_VisitNote/Button_Save'))
+
+WebUI.verifyElementPresent(findTestObject('Page_Visits/Section_NotesEncounter'), 0)
 
 WebUI.closeBrowser()
 

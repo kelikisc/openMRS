@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Button_ConfirmEdit</name>
+   <name>Drodpwon_Diagnosis</name>
    <tag></tag>
-   <elementGuidId>cde4f508-f4e7-4751-a33e-4aeeb71e8aa1</elementGuidId>
+   <elementGuidId>582a4894-06bf-4f04-ba3d-779594f0c505</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//button[@class='cancel']/following-sibling::button)[3]</value>
+         <value>//*[@id=&quot;diagnosis-search&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
