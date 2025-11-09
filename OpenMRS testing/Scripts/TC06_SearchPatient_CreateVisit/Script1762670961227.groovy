@@ -41,69 +41,51 @@ WebUI.waitForElementPresent(findTestObject('Page_Home/Text_LoginInfo'), 0)
 
 WebUI.verifyElementPresent(findTestObject('Page_Home/Text_LoginInfo'), 0)
 
-WebUI.click(findTestObject('Page_Home/Menu_Registration'))
+WebUI.click(findTestObject('Page_Home/Menu_FindPatient'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForPageLoad(0)
+WebUI.click(findTestObject('Page_FindPatient/Input_Search'))
 
-WebUI.click(findTestObject('Page_Registration/Button_Next'))
+WebUI.setText(findTestObject('Page_FindPatient/Input_Search'), GlobalVariable.GivenName)
 
-WebUI.verifyElementPresent(findTestObject('Page_Registration/Error_Names'), 0)
+WebUI.delay(3)
 
-WebUI.click(findTestObject('Page_Registration/Input_GivenName'))
+WebUI.verifyTextPresent(GlobalVariable.FamilyName, false)
 
-WebUI.setText(findTestObject('Page_Registration/Input_GivenName'), GlobalVariable.GivenName)
+WebUI.click(findTestObject('Page_FindPatient/Row_SearchResult'))
 
-WebUI.click(findTestObject('Page_Registration/Input_FamilyName'))
+WebUI.waitForElementPresent(findTestObject('Page_UserDetails/Text_GivenName'), 0)
 
-WebUI.setText(findTestObject('Page_Registration/Input_FamilyName'), GlobalVariable.FamilyName)
+WebUI.verifyElementPresent(findTestObject('Page_UserDetails/Text_GivenName'), 0)
 
-WebUI.click(findTestObject('Page_Registration/Button_Next'))
+WebUI.verifyElementText(findTestObject('Page_UserDetails/Text_GivenName'), GlobalVariable.GivenName)
 
-WebUI.click(findTestObject('Page_Registration/Button_Next'))
+WebUI.verifyElementPresent(findTestObject('Page_UserDetails/Text_FamilyName'), 0)
 
-WebUI.verifyElementPresent(findTestObject('Page_Registration/Error_Names'), 0)
+WebUI.verifyElementText(findTestObject('Page_UserDetails/Text_FamilyName'), GlobalVariable.FamilyName)
 
-WebUI.click(findTestObject('Page_Registration/Option_Gender1'))
+WebUI.click(findTestObject('Page_UserDetails/Button_StartVisit'))
 
-WebUI.click(findTestObject('Page_Registration/Button_Next'))
+WebUI.click(findTestObject('Page_UserDetails/Button_Confirm'))
 
-WebUI.click(findTestObject('Page_Registration/Button_Next'))
+WebUI.verifyElementPresent(findTestObject('Page_Visits/Section_VisitDetails'), 0)
 
-WebUI.verifyElementPresent(findTestObject('Page_Registration/Error_Address'), 0)
+WebUI.click(findTestObject('Page_Visits/Icon_HomePage'))
 
-WebUI.click(findTestObject('Page_Registration/Input_BirthDate'))
+WebUI.waitForElementPresent(findTestObject('Page_Home/Text_LoginInfo'), 0)
 
-WebUI.setText(findTestObject('Page_Registration/Input_BirthDate'), '12')
+WebUI.verifyElementPresent(findTestObject('Page_Home/Text_LoginInfo'), 0)
 
-WebUI.click(findTestObject('Page_Registration/Dropdown_BirthMonth'))
+WebUI.click(findTestObject('Page_Home/Menu_ActiveVisit'))
 
-WebUI.selectOptionByValue(findTestObject('Page_Registration/Dropdown_BirthMonth'), '4', false)
+WebUI.click(findTestObject('Page_ActiveVisit/Input_Search'))
 
-WebUI.click(findTestObject('Page_Registration/Input_BirthYear'))
+WebUI.setText(findTestObject('Page_ActiveVisit/Input_Search'), GlobalVariable.GivenName)
 
-WebUI.setText(findTestObject('Page_Registration/Input_BirthYear'), '1992')
+WebUI.delay(3, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_Registration/Button_Next'))
+WebUI.click(findTestObject('Page_ActiveVisit/Table_SearchResult'))
 
-WebUI.click(findTestObject('Page_Registration/Button_Next'))
-
-WebUI.verifyElementPresent(findTestObject('Page_Registration/Error_Address'), 0)
-
-WebUI.click(findTestObject('Page_Registration/Input_Address'))
-
-WebUI.setText(findTestObject('Page_Registration/Input_Address'), 'Jakarta')
-
-WebUI.click(findTestObject('Page_Registration/Button_Next'))
-
-WebUI.click(findTestObject('Page_Registration/Button_Next'))
-
-WebUI.click(findTestObject('Page_Registration/Button_Next'))
-
-WebUI.click(findTestObject('Page_Registration/Button_Confirm'))
-
-WebUI.waitForPageLoad(0)
-
-WebUI.waitForElementVisible(findTestObject('Page_UserDetails/Text_GivenName'), 0)
+WebUI.waitForElementPresent(findTestObject('Page_UserDetails/Text_GivenName'), 0)
 
 WebUI.verifyElementPresent(findTestObject('Page_UserDetails/Text_GivenName'), 0)
 

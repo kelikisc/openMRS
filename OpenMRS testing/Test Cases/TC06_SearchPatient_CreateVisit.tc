@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC06_SearchPatient_CreateVisit</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ca8d9739-acf1-40c5-a0be-57ac6a4a25e6</testCaseGuid>
+</TestCaseEntity>

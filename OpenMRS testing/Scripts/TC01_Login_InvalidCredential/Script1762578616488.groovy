@@ -21,7 +21,7 @@ WebUI.openBrowser('')
 
 WebUI.maximizeWindow()
 
-WebUI.navigateToUrl('https://o2.openmrs.org/openmrs/referenceapplication/login.page')
+WebUI.navigateToUrl(GlobalVariable.WebURL)
 
 WebUI.click(findTestObject('Page_Login/Option_Location1'), FailureHandling.STOP_ON_FAILURE)
 

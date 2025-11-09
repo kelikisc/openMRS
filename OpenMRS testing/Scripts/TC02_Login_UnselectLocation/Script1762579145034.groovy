@@ -21,15 +21,15 @@ WebUI.openBrowser('')
 
 WebUI.maximizeWindow()
 
-WebUI.navigateToUrl('https://o2.openmrs.org/openmrs/referenceapplication/login.page')
+WebUI.navigateToUrl(GlobalVariable.WebURL)
 
 WebUI.click(findTestObject('Page_Login/Input_Username'))
 
-WebUI.setText(findTestObject('Page_Login/Input_Username'), 'admin')
+WebUI.setText(findTestObject('Page_Login/Input_Username'), GlobalVariable.Username)
 
 WebUI.click(findTestObject('Page_Login/Input_Password'))
 
-WebUI.setText(findTestObject('Page_Login/Input_Password'), 'Admin123')
+WebUI.setText(findTestObject('Page_Login/Input_Password'), GlobalVariable.Password)
 
 WebUI.click(findTestObject('Page_Login/Button_Login'))
 
